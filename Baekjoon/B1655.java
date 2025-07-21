@@ -27,7 +27,7 @@ public class B1655 {
             else right.offer(value);
 
             if (left.size() - right.size() > 1) right.offer(left.poll());
-            else if (right.size() > left.size()) left.offer(right.poll())
+            else if (right.size() > left.size()) left.offer(right.poll());
 
             bw.write(String.valueOf(left.peek()));
             bw.newLine();
